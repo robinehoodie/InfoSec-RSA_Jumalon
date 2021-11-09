@@ -59,11 +59,17 @@ def EncryptionAndDecryption(p , q, string):
    #Encryption
     print("\n *************ENCRYPTION***************\n")
 #     print("Letter \t Numeric Representation \t m^e \t\t\t   Cipher Text")
-  
+    count = 0  
     for i in range(len(string)):
         s = ord(string[i].lower())-96               #convert to alphabet numbers
         x.append(s**e % n);                         #Encryption formula
-        print(x[i], end=' ') 
+
+        if(y[count]==True):
+            print(chr(x[i]+96).upper(), end='')
+        else:
+            print(x[i],end='')
+        count+=1
+       
 #         print(" ",string[i],"\t",s,"\t",s**e,"\t",x[i])
     print("\n")
    #Decryption
