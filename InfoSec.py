@@ -67,7 +67,7 @@ def EncryptionAndDecryption(p , q, string):
 #         print(" ",string[i],"\t",s,"\t",s**e,"\t",x[i])
     print("\n")
    #Decryption
-    print("\n      \t *************DECRYPTION***************\n")
+    print("\n*************DECRYPTION***************\n")
 #     print("Cipher Text \t\t\t c^d \t\t\t\t m= m^e mod n \t    Plane Text")
     count = 0
     for i in x:
